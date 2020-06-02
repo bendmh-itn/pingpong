@@ -1,1 +1,1 @@
-web: node /public
+web: node public/
