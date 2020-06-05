@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Navbar = (props) => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <NavLink className="navbar-brand" to="/">
           TTSauveniere
         </NavLink>
@@ -27,20 +27,36 @@ const Navbar = (props) => {
                 Home <span className="sr-only">(current)</span>
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item active">
               <NavLink className="nav-link" to="/training">
                 Entrainements
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item active">
               <NavLink className="nav-link" to="/member">
                 Devenir membre
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="contact">
-                About
+            <li className="nav-item dropdown active">
+              <NavLink
+                className="nav-link dropdown-toggle"
+                to="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Contact
               </NavLink>
+              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <NavLink className="dropdown-item" to="contactForm">
+                  Formulaire
+                </NavLink>
+                <NavLink className="dropdown-item" to="numeroResponsables">
+                  Responsables
+                </NavLink>
+              </div>
             </li>
           </ul>
         </div>

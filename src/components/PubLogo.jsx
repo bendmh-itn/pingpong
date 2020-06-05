@@ -1,7 +1,13 @@
 import React from "react";
 
-const PubLogo = (props) => {
-  return <h1>titre de la page</h1>;
+const PubLogo = ({ urlLink, imageAlt, imageSource }) => {
+  return (
+    <>
+      <a href={urlLink} target="_blank" rel="noopener noreferrer">
+        <img className="pubImages" src={imageSource} alt={imageAlt} />
+      </a>
+    </>
+  );
 };
 
 export default PubLogo;

@@ -1,9 +1,13 @@
 import React from "react";
+import Jumbotron from "../components/Jumbotron";
+import MyDocument from "../components/MyDocument";
 
 const Member = (props) => {
   return (
     <>
-      <h1>Devenir membre</h1>
+      <Jumbotron text="Devenir membre du club" />
+
+      <MyDocument />
     </>
   );
 };
