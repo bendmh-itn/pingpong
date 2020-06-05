@@ -23,8 +23,8 @@ const Navbar = (props) => {
         <div className="collapse navbar-collapse" id="navbarColor01">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <NavLink className="nav-link" to="/">
-                Home <span className="sr-only">(current)</span>
+              <NavLink className="nav-link" to="/history">
+                le club
               </NavLink>
             </li>
             <li className="nav-item active">
@@ -48,7 +48,7 @@ const Navbar = (props) => {
                 <NavLink className="dropdown-item" to="/member">
                   Liste de force
                 </NavLink>
-                <NavLink className="dropdown-item" to="/member">
+                <NavLink className="dropdown-item" to="/becomeMember">
                   Devenir membre
                 </NavLink>
               </div>

@@ -17,6 +17,7 @@ const Jumbotron = ({
         />
       )}
       <h1 className="h1Jumbotron">{text}</h1>
+      <span style={{ fontSize: "2em" }}> (N186)</span>
       {img && (
         <img
           className="imgJumbotron"

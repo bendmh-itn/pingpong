@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
-import jumbotronChange from "../services/jumbotronChange";
+import JumbotronChange from "../services/jumbotronChange";
 import Responsable from "../components/Responsable";
+import imageTel from "../IMG/tel.PNG";
 
 const NumeroResponsables = (props) => {
   useEffect(() => {
-    jumbotronChange.changeText(
+    JumbotronChange.changeText(
       "<h1 class='h1Jumbotron'>Liste des repsonsables du club</h1>"
     );
+    JumbotronChange.changeImage(imageTel);
   }, []);
   return (
     <>

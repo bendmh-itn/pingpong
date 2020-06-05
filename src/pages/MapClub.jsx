@@ -15,8 +15,8 @@ const MapClub = (props) => {
           <iframe
             title="clubMap"
             allowtransparency="true"
-            width="400"
-            height="300"
+            width="600"
+            height="500"
             id="gmap_canvas"
             src="https://maps.google.com/maps?q=place%20du%20sablon%205030%20gembloux&t=&z=13&ie=UTF8&iwloc=&output=embed"
             frameBorder="0"

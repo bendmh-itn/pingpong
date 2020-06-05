@@ -10,6 +10,8 @@ import NumeroResponsables from "./pages/NumeroResponsables";
 import FormContact from "./components/FormContact";
 import Jumbotron from "./components/Jumbotron";
 import image from "./IMG/ping.png";
+import HistoryClub from "./pages/HistoryClub";
+import BecomeMember from "./pages/BecomeMember";
 
 function App() {
   return (
@@ -23,28 +25,34 @@ function App() {
           imgAlt="Raquette ping pong"
         />
         <div className="container">
-          <div style={{ display: "block" }}>
-            <FormContact
-              width="250"
-              height="450"
-              title="Nous contactez"
-              src="https://www.emailmeform.com/builder/form/yp130CamsP4TeMYAx1N"
-            />
+          <div className="row">
+            <div className="col-sm">
+              <FormContact
+                width="250"
+                height="450"
+                title="Nous contactez"
+                src="https://www.emailmeform.com/builder/form/yp130CamsP4TeMYAx1N"
+              />
+            </div>
           </div>
-          <Switch>
-            <Route path="/numeroResponsables" component={NumeroResponsables} />
-            <Route path="/mapClub" component={MapClub} />
-            <Route path="/member" component={Member} />
-            <Route path="/training" component={Training} />
-            <Route path="/" component={HomePage} />
-          </Switch>
+          <div className="col-sm">
+            <Switch>
+              <Route
+                path="/numeroResponsables"
+                component={NumeroResponsables}
+              />
+              <Route path="/mapClub" component={MapClub} />
+              <Route path="/member" component={Member} />
+              <Route path="/becomeMember" component={BecomeMember} />
+              <Route path="/training" component={Training} />
+              <Route path="/history" component={HistoryClub} />
+              <Route path="/" component={HomePage} />
+            </Switch>
+          </div>
         </div>
       </main>
       <footer>
-        <div
-          className="page-footer align-middle"
-          style={{ textAlign: "center" }}
-        >
+        <div className="page-footer">
           <Link to="/mapClub">
             Adresse du club : Place du sablon 5030 Sauvenière
           </Link>
