@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "effe6050db9df79f5ef4bd58d23ffece",
+    "revision": "bceb3be7db94c37bde705f3290d19e69",
     "url": "/pingpong/index.html"
   },
   {
-    "revision": "d95b9b9c83d8f5d7e6ec",
-    "url": "/pingpong/static/css/main.886170bb.chunk.css"
+    "revision": "61d7011755906ef86c85",
+    "url": "/pingpong/static/css/main.bb1c2528.chunk.css"
   },
   {
-    "revision": "da6305ea9c456da92446",
-    "url": "/pingpong/static/js/2.57148186.chunk.js"
+    "revision": "6c7925fb7b5fc3f7910b",
+    "url": "/pingpong/static/js/2.b0cad8f1.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/pingpong/static/js/2.57148186.chunk.js.LICENSE.txt"
+    "url": "/pingpong/static/js/2.b0cad8f1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d95b9b9c83d8f5d7e6ec",
-    "url": "/pingpong/static/js/main.01b5c3e4.chunk.js"
+    "revision": "61d7011755906ef86c85",
+    "url": "/pingpong/static/js/main.4fde2d87.chunk.js"
   },
   {
     "revision": "c0647d25477fc0135ea4",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5a021ab95b4d2a0c8e7511c40ca7bb2f",
     "url": "/pingpong/static/media/defaultProfil.5a021ab9.png"
+  },
+  {
+    "revision": "726cbd2991929ca3b9da486ce634c0c8",
+    "url": "/pingpong/static/media/liste.726cbd29.png"
   },
   {
     "revision": "33455653841a5d20f14c1c12a610468d",
@@ -38,5 +42,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "fa31ab2089673d63ab4fdcbf9f27e761",
     "url": "/pingpong/static/media/retro.fa31ab20.png"
+  },
+  {
+    "revision": "d71d0db1b5bb25e6edc4fd9264711dc5",
+    "url": "/pingpong/static/media/tel.d71d0db1.PNG"
   }
 ]);
