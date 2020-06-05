@@ -1,9 +1,12 @@
 import React from "react";
 
-const FormContact = ({ width = "540px", src, height }) => {
+const FormContact = ({ width = "540px", src, height, title }) => {
   return (
     <>
-      <div style={{ width: width }}>
+      <div style={{ width: width, border: "solid black 1px" }}>
+        <h2 className="mb-0" style={{ textAlign: "center" }}>
+          {title}
+        </h2>
         <iframe
           title="contactForm"
           src={src}

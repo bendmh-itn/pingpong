@@ -1,18 +1,18 @@
-import React from "react";
-import Jumbotron from "../components/Jumbotron";
+import React, { useEffect } from "react";
 import imageRetro from "../IMG/retro.png";
+import JumbotronChange from "../services/jumbotronChange";
 
 const Training = (props) => {
+  useEffect(() => {
+    JumbotronChange.changeText(
+      "<h1 class='h1Jumbotron'>Les entrainements du club</h1>"
+    );
+    JumbotronChange.changeImage(imageRetro);
+  }, []);
+
   return (
     <>
-      <Jumbotron
-        text="Les entraînements du club"
-        img={imageRetro}
-        imgAlt="personne jouant au ping"
-        height="70px"
-      />
-
-      <div className="container">
+      <div className="ml-3">
         <p>
           Les entraînements sont donnés par : <strong>Benoit de Mahieu</strong>
         </p>

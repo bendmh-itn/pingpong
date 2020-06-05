@@ -32,10 +32,26 @@ const Navbar = (props) => {
                 Entrainements
               </NavLink>
             </li>
-            <li className="nav-item active">
-              <NavLink className="nav-link" to="/member">
-                Devenir membre
+            <li className="nav-item dropdown active">
+              <NavLink
+                className="nav-link dropdown-toggle"
+                to="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Membres
               </NavLink>
+              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <NavLink className="dropdown-item" to="/member">
+                  Liste de force
+                </NavLink>
+                <NavLink className="dropdown-item" to="/member">
+                  Devenir membre
+                </NavLink>
+              </div>
             </li>
             <li className="nav-item dropdown active">
               <NavLink
@@ -50,11 +66,11 @@ const Navbar = (props) => {
                 Contact
               </NavLink>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <NavLink className="dropdown-item" to="contactForm">
-                  Formulaire
-                </NavLink>
-                <NavLink className="dropdown-item" to="numeroResponsables">
+                <NavLink className="dropdown-item" to="/numeroResponsables">
                   Responsables
+                </NavLink>
+                <NavLink className="dropdown-item" to="/mapClub">
+                  Nous situer
                 </NavLink>
               </div>
             </li>

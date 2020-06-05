@@ -1,16 +1,15 @@
-import React from "react";
-import FormContact from "../components/FormContact";
+import React, { useEffect } from "react";
+import jumbotronChange from "../services/jumbotronChange";
+import imageMap from "../IMG/map.png";
 
-const ContactForm = (props) => {
+const MapClub = (props) => {
+  useEffect(() => {
+    jumbotronChange.changeText("<h1 class='h1Jumbotron'>Situer le club</h1>");
+    jumbotronChange.changeImage(imageMap);
+  }, []);
+
   return (
     <>
-      <div className="container">
-        <FormContact
-          height="831"
-          src="https://www.emailmeform.com/builder/embed/Fc0tbw65v16jfa?#https%3A%2F%2Fbendmh-itn.github.io%2Fttsauveniere%2Fcontact.html"
-        />
-      </div>
-
       <div className="mapouter">
         <div className="gmap_canvas">
           <iframe
@@ -31,4 +30,4 @@ const ContactForm = (props) => {
   );
 };
 
-export default ContactForm;
+export default MapClub;
