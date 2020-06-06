@@ -4,7 +4,7 @@ const FormContact = ({ width = "540px", src, height, title }) => {
   return (
     <>
       <div style={{ width: width, border: "solid black 1px" }}>
-        <h2 className="mb-0" style={{ textAlign: "center" }}>
+        <h2 className="mb-0 d-none d-sm-block" style={{ textAlign: "center" }}>
           {title}
         </h2>
         <iframe

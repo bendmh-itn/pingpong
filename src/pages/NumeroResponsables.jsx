@@ -5,14 +5,12 @@ import imageTel from "../IMG/tel.PNG";
 
 const NumeroResponsables = (props) => {
   useEffect(() => {
-    JumbotronChange.changeText(
-      "<h1 class='h1Jumbotron'>Liste des repsonsables du club</h1>"
-    );
+    JumbotronChange.changeText("Liste des responsables du club");
     JumbotronChange.changeImage(imageTel);
   }, []);
   return (
     <>
-      <div style={{ width: "800px" }} className="row flex pl-5">
+      <div style={{ width: "100%" }} className="row flex pl-5">
         <div className="col-sm">
           <Responsable
             name="Benoit de Mahieu"

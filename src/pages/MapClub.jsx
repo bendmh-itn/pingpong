@@ -4,7 +4,7 @@ import imageMap from "../IMG/map.png";
 
 const MapClub = (props) => {
   useEffect(() => {
-    jumbotronChange.changeText("<h1 class='h1Jumbotron'>Situer le club</h1>");
+    jumbotronChange.changeText("Situer le club");
     jumbotronChange.changeImage(imageMap);
   }, []);
 
@@ -15,7 +15,7 @@ const MapClub = (props) => {
           <iframe
             title="clubMap"
             allowtransparency="true"
-            width="600"
+            width="100%"
             height="500"
             id="gmap_canvas"
             src="https://maps.google.com/maps?q=place%20du%20sablon%205030%20gembloux&t=&z=13&ie=UTF8&iwloc=&output=embed"

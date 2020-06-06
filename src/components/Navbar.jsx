@@ -66,6 +66,9 @@ const Navbar = (props) => {
                 Contact
               </NavLink>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <NavLink className="dropdown-item d-block d-sm-none" to="/mail">
+                  Mail
+                </NavLink>
                 <NavLink className="dropdown-item" to="/numeroResponsables">
                   Responsables
                 </NavLink>

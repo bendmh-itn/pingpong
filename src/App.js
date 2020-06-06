@@ -12,6 +12,7 @@ import Jumbotron from "./components/Jumbotron";
 import image from "./IMG/ping.png";
 import HistoryClub from "./pages/HistoryClub";
 import BecomeMember from "./pages/BecomeMember";
+import Mail from "./pages/mail";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
         />
         <div className="container">
           <div className="row">
-            <div className="col-sm">
+            <div className="col-sm d-none d-sm-block">
               <FormContact
                 width="250"
                 height="450"
@@ -35,13 +36,14 @@ function App() {
               />
             </div>
           </div>
-          <div className="col-sm">
+          <div className="col-sm" style={{ margin: "auto" }}>
             <Switch>
               <Route
                 path="/numeroResponsables"
                 component={NumeroResponsables}
               />
               <Route path="/mapClub" component={MapClub} />
+              <Route path="/mail" component={Mail} />
               <Route path="/member" component={Member} />
               <Route path="/becomeMember" component={BecomeMember} />
               <Route path="/training" component={Training} />
@@ -51,7 +53,7 @@ function App() {
           </div>
         </div>
       </main>
-      <footer>
+      <footer className="d-none d-sm-block">
         <div className="page-footer">
           <Link to="/mapClub">
             Adresse du club : Place du sablon 5030 Sauvenière

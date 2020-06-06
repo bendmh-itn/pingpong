@@ -6,9 +6,7 @@ import JumbotronChange from "../services/jumbotronChange";
 
 const HomePage = (props) => {
   useEffect(() => {
-    JumbotronChange.changeText(
-      "<h1 class='h1Jumbotron'>Petit club mais avec des grands joueurs</h1>"
-    );
+    JumbotronChange.changeText("Petit club mais avec des grands joueurs");
     JumbotronChange.changeImage(imageHome);
   }, []);
 

@@ -4,9 +4,7 @@ import imageHome from "../IMG/ping.png";
 
 const HistoryClub = (props) => {
   useEffect(() => {
-    JumbotronChange.changeText(
-      "<h1 class='h1Jumbotron'>L'histoire du club de Sauvenière</h1>"
-    );
+    JumbotronChange.changeText("L'histoire du club de Sauvenière");
     JumbotronChange.changeImage(imageHome);
   }, []);
   return (

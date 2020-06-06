@@ -4,9 +4,7 @@ import JumbotronChange from "../services/jumbotronChange";
 
 const BecomeMember = (props) => {
   useEffect(() => {
-    JumbotronChange.changeText(
-      "<h1 class='h1Jumbotron'>S'inscrire au club TT Sauvenière</h1>"
-    );
+    JumbotronChange.changeText("S'inscrire au club TT Sauvenière");
     JumbotronChange.changeImage(imageHome);
   }, []);
   return (

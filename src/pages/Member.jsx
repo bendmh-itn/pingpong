@@ -5,9 +5,7 @@ import imageList from "../IMG/liste.png";
 
 const Member = (props) => {
   useEffect(() => {
-    JumbotronChange.changeText(
-      "<h1 class='h1Jumbotron'>Liste de force du TT Sauvenière</h1>"
-    );
+    JumbotronChange.changeText("Liste de force du TT Sauvenière");
     JumbotronChange.changeImage(imageList);
   }, []);
 
@@ -15,7 +13,7 @@ const Member = (props) => {
     <>
       <MyDocument
         src="https://drive.google.com/file/d/1Ulbk5DjZgmQ_stbusrZolzDGmF2BmArD/preview"
-        width="800"
+        width="100%"
         height="500"
       />
     </>

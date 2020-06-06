@@ -4,9 +4,7 @@ import JumbotronChange from "../services/jumbotronChange";
 
 const Training = (props) => {
   useEffect(() => {
-    JumbotronChange.changeText(
-      "<h1 class='h1Jumbotron'>Les entrainements du club</h1>"
-    );
+    JumbotronChange.changeText("Les entrainements du club");
     JumbotronChange.changeImage(imageRetro);
   }, []);
 

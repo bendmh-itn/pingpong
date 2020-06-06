@@ -14,13 +14,13 @@
   text-align: right;
   margin: auto;
   height: 500px;
-  width: 600px;
+  width: 100%;
 }
 .gmap_canvas {
   overflow: hidden;
   background: none !important;
   height: 500px;
-  width: 600px;
+  width: 100%;
 }
 
 .h1Jumbotron {
@@ -31,11 +31,12 @@
   display: flex;
 }
 
-Footer {
+footer {
   background-color: #555;
   height: 50px;
   padding-top: 5px;
   margin-top: 10px;
+  width: 100%;
 }
 
 footer > div {
