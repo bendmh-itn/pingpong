@@ -12,7 +12,7 @@ const HomePage = (props) => {
 
   return (
     <>
-      <NavLink to="member">
+      <NavLink to="/becomeMember">
         <button className="btn btn-success ml-5 mr-5">
           <h2>Devenir Membre</h2>
         </button>
