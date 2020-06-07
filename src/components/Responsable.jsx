@@ -1,5 +1,6 @@
 import React from "react";
 import defaultProfil from "../IMG/defaultProfil.png";
+import "../CSS/responsable.css";
 
 const Responsable = ({ img, alt, name, num, status }) => {
   return (
@@ -7,7 +8,7 @@ const Responsable = ({ img, alt, name, num, status }) => {
       <div className="card">
         <img
           src={img ? img : defaultProfil}
-          className="card-img-top"
+          className="card-img-top d-md-none d-lg-block"
           alt={alt ? alt : "Avatar par défaut"}
         />
         <div className="card-body">

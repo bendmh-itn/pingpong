@@ -1,11 +1,14 @@
 import React, { useEffect } from "react";
 import FormContact from "../components/FormContact";
-import jumbotronChange from "../services/jumbotronChange";
+import JumbotronChange from "../services/jumbotronChange";
+import imageMail from "../IMG/mails.png";
 
 const Mail = (props) => {
   useEffect(() => {
-    jumbotronChange.changeText("Envoyez nous un mail");
+    JumbotronChange.changeText("Envoyez nous un mail");
+    JumbotronChange.changeImage(imageMail);
   }, []);
+
   return (
     <>
       <FormContact

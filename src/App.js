@@ -10,7 +10,7 @@ import NumeroResponsables from "./pages/NumeroResponsables";
 import FormContact from "./components/FormContact";
 import Jumbotron from "./components/Jumbotron";
 import image from "./IMG/ping.png";
-import HistoryClub from "./pages/HistoryClub";
+import MenuClub from "./pages/MenuClub";
 import BecomeMember from "./pages/BecomeMember";
 import Mail from "./pages/mail";
 
@@ -27,7 +27,7 @@ function App() {
         />
         <div className="container">
           <div className="row">
-            <div className="col-sm d-none d-sm-block">
+            <div className="col-sm d-none d-sm-none d-md-block">
               <FormContact
                 width="250"
                 height="450"
@@ -36,7 +36,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="col-sm" style={{ margin: "auto" }}>
+          <div className="col-sm">
             <Switch>
               <Route
                 path="/numeroResponsables"
@@ -47,7 +47,7 @@ function App() {
               <Route path="/member" component={Member} />
               <Route path="/becomeMember" component={BecomeMember} />
               <Route path="/training" component={Training} />
-              <Route path="/history" component={HistoryClub} />
+              <Route path="/club" component={MenuClub} />
               <Route path="/" component={HomePage} />
             </Switch>
           </div>

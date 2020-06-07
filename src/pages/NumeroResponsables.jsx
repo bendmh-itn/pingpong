@@ -10,20 +10,17 @@ const NumeroResponsables = (props) => {
   }, []);
   return (
     <>
-      <div style={{ width: "100%" }} className="row flex pl-5">
-        <div className="col-sm">
-          <Responsable
-            name="Benoit de Mahieu"
-            num="0491430548"
-            status="Entraineur"
-          />
-        </div>
-        <div className="col-sm">
-          <Responsable name="Léa Litwinski" num="04********" status="....." />
-        </div>
-        <div className="col-sm">
-          <Responsable name="Stani Litwinski" num="04********" status="....." />
-        </div>
+      <div
+        style={{ width: "100%" }}
+        className="row justify-content-center pl-5"
+      >
+        <Responsable
+          name="Benoit de Mahieu"
+          num="0491430548"
+          status="Entraineur"
+        />
+        <Responsable name="Léa Litwinski" num="04********" status="....." />
+        <Responsable name="Stani Litwinski" num="04********" status="....." />
       </div>
     </>
   );

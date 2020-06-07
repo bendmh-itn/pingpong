@@ -1,0 +1,18 @@
+.menu {
+  display: inline;
+  border: 1px solid darkgray;
+  font-size: 2em;
+  margin: 0 5px;
+  background-color: #484848;
+  padding: 10px;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.ulMenu {
+  padding: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}

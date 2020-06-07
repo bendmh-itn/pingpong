@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import jumbotronChange from "../services/jumbotronChange";
 import imageMap from "../IMG/map.png";
+import "../CSS/map.css";
 
 const MapClub = (props) => {
   useEffect(() => {

@@ -1,4 +1,5 @@
 import React from "react";
+import "../CSS/pubImage.css";
 
 const PubLogo = ({ urlLink, imageAlt, imageSource }) => {
   return (

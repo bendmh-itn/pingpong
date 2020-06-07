@@ -1,0 +1,15 @@
+.main-timeline4 {
+  border-left: solid black 1px;
+  padding-left: 7px;
+}
+
+.buttonTimeline {
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  display: inline;
+}
+
+.year {
+  display: inline;
+}

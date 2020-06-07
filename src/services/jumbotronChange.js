@@ -1,10 +1,13 @@
 function changeText(text) {
-  document.getElementsByClassName("h1Jumbotron")[0].innerHTML = text;
+  const titles = document.getElementsByClassName("h1Jumbotron");
+  for (let i = 0; i < titles.length; i++) {
+    titles[i].innerHTML = text;
+  }
 }
 
 function changeImage(image) {
   const elements = document.getElementsByClassName("imgJumbotron");
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < elements.length; i++) {
     elements[i].setAttribute("src", image);
   }
 }
