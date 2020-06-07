@@ -21,14 +21,14 @@ const NavbarSite = (props) => {
 
   return (
     <>
-      <ul className="ulMenu">
+      <div className="row ml-3">
         <li onClick={toggleComponent} id="infrastructure" className="menu">
           Infrastructure
         </li>
         <li onClick={toggleComponent} id="history" className="menu">
           Historique
         </li>
-      </ul>
+      </div>
     </>
   );
 };

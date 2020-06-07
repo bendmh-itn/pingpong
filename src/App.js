@@ -36,7 +36,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="col-sm">
+          <div className="col-sm" style={{ margin: "auto" }}>
             <Switch>
               <Route
                 path="/numeroResponsables"
