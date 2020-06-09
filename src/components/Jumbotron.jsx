@@ -11,7 +11,7 @@ const Jumbotron = ({
       <div className="jumbotron d-block d-sm-none">
         <h3 className="h1Jumbotron ">{text}</h3>
       </div>
-      <div className="jumbotron d-none d-sm-block">
+      <div className="jumbotron d-none d-sm-block text-center">
         {img && (
           <img
             className="imgJumbotron"

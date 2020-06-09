@@ -36,7 +36,7 @@ function App() {
               />
             </div>
           </div>
-          <div className="col-sm" style={{ margin: "auto" }}>
+          <div className="col-sm marginResponsive">
             <Switch>
               <Route
                 path="/numeroResponsables"
@@ -53,7 +53,7 @@ function App() {
           </div>
         </div>
       </main>
-      <footer className="d-none d-sm-block">
+      <footer className="d-none d-sm-none d-md-block">
         <div className="page-footer">
           <Link to="/mapClub">
             Adresse du club : Place du sablon 5030 Sauvenière

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import imageHome from "../IMG/ping.png";
 import JumbotronChange from "../services/jumbotronChange";
+import { NavLink } from "react-router-dom";
 
 const BecomeMember = (props) => {
   useEffect(() => {
@@ -9,30 +10,61 @@ const BecomeMember = (props) => {
   }, []);
   return (
     <>
-      Elit veniam incididunt ipsum ipsum pariatur ad ipsum labore nisi duis
-      culpa laborum. Do consectetur ut culpa dolore anim excepteur sunt eu.
-      Nostrud labore magna duis qui dolore est laboris et mollit ut ex aute. In
-      adipisicing est ea nulla magna consectetur ex dolor dolore dolor. Ullamco
-      occaecat et mollit aute adipisicing nisi officia consectetur nisi
-      exercitation exercitation duis. Quis laborum reprehenderit duis deserunt
-      et nulla quis anim ea consectetur. Esse adipisicing eu aliqua magna
-      deserunt elit aliquip incididunt cupidatat nostrud do sint. Anim cupidatat
-      ullamco consequat aliqua minim tempor dolore ullamco et laboris
-      reprehenderit ex quis. Culpa magna magna irure nostrud. Cupidatat
-      adipisicing aute labore tempor laborum. Amet magna aliqua qui sit
-      incididunt irure nostrud consectetur culpa fugiat. Nostrud voluptate
-      excepteur sunt ut voluptate consectetur esse sit. Ea culpa qui nostrud
-      esse esse nostrud. Sint ad eu cillum culpa velit cupidatat qui adipisicing
-      sint qui. Deserunt qui Lorem amet sint proident id cupidatat qui Lorem
-      voluptate non Lorem. Laborum aute nisi ipsum fugiat elit commodo mollit
-      tempor nulla voluptate sunt nostrud esse. Dolor aliqua id in mollit do.
-      Occaecat culpa est ex in nulla mollit anim et reprehenderit nostrud. Velit
-      tempor incididunt minim dolore eiusmod voluptate. Mollit ipsum do enim
-      veniam exercitation. Laboris dolore commodo nisi Lorem laboris deserunt
-      mollit laboris exercitation. Aute ea duis consequat ea. Do veniam
-      excepteur adipisicing reprehenderit dolore laboris sunt. Ipsum duis
-      consequat elit veniam Lorem non proident nostrud ut. Voluptate aliquip
-      enim magna consequat aute eu quis ex minim.
+      <h2>Informations générales</h2>
+      <p>
+        Nous autorisons tous jeunes à venir tester les entrainements dirigés
+        pour se familiariser avec ce sport. Après une certaine période, si le
+        jeune souhaite participer à la compétition, l'inscription au club et le
+        payement de la cotisation est indispensable.
+      </p>
+      <p>
+        Le coût de la cotisation annuelle pour la saison 2020-2021 est de{" "}
+        <strong>70€</strong>
+      </p>
+      <h2>L'affiliation au TT Sauvenière comprend : </h2>
+      <ul>
+        <li>L’affiliation à la fédération de tennis de table</li>
+        <li>Les entraînements dirigés</li>
+        <li>Le maillot du club</li>
+        <li>
+          Une participation/présence active aux entrainements et aux compétition
+        </li>
+        <li>
+          Jouer à domicile et à l'extérieur, il est possible de demander
+          quelques lifts aux parents
+        </li>
+      </ul>
+      <h2>Comment s'affilier</h2>
+      <ol>
+        <li>
+          Télécharger et compléter le{" "}
+          <a
+            href="https://aftt.be/wp-content/uploads/2020/03/Affiliation-2020-2021-2.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Document d'inscription
+          </a>{" "}
+          de la fédération de tennis de table
+        </li>
+        <li>
+          Passer une visite médicale auprès de votre médecin qui doit compléter
+          le document de la Fédération et vous déclarer apte à la pratique du
+          tennis de table
+        </li>
+        <li>Remettre le document au club</li>
+        <li>Payer la cotisation selon les modalités du club (BE.....)</li>
+      </ol>
+
+      <p>
+        Pour toute information supplémentaire, n'hésitez pas à nous contacter
+        par téléphone (<NavLink to="/numeroResponsables">contact</NavLink>) ou
+        par mail{" "}
+        <NavLink to="/mail">
+          <span className="d-inline d-sm-inline d-md-none">(formulaire)</span>
+        </NavLink>
+        <span className="d-none d-sm-none d-md-inline">(formulaire)</span>
+      </p>
     </>
   );
 };
