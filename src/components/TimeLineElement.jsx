@@ -1,6 +1,13 @@
 import React from "react";
 
-const TimeLineElement = ({ toogleShow, year, title, text }) => {
+const TimeLineElement = ({
+  toogleShow,
+  year,
+  title,
+  text,
+  href = "",
+  hrefText = "",
+}) => {
   return (
     <>
       <div className="timeline">
@@ -10,7 +17,10 @@ const TimeLineElement = ({ toogleShow, year, title, text }) => {
         <h2 className="year">{year}</h2>
         <h5 className="title">{title}</h5>
         <div className="inner-content d-none">
-          <p className="description">{text}</p>
+          <p className="description mb-0">{text}</p>
+          <a href={href} target="_blank" rel="noopener noreferrer">
+            {hrefText}
+          </a>
         </div>
       </div>
     </>

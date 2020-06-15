@@ -1,9 +1,7 @@
 .menu {
   display: inline;
-  border: 1px solid darkgray;
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 0 5px;
-  background-color: #484848;
   padding: 0 10px;
   color: aliceblue;
   cursor: pointer;
@@ -12,6 +10,11 @@
 
 .ulMenu {
   padding: 0;
+}
+
+li:hover {
+  background-color: darkgray;
+  border-radius: 0.5em;
 }
 
 a:hover {
