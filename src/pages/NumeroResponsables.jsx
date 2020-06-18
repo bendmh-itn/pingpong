@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import JumbotronChange from "../services/jumbotronChange";
 import Responsable from "../components/Responsable";
 import imageTel from "../IMG/tel.PNG";
+import imageEntraineur from "../IMG/entraineur.jpg";
 
 const NumeroResponsables = (props) => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const NumeroResponsables = (props) => {
           name="Benoit de Mahieu"
           num="0491430548"
           status="Entraineur"
+          img={imageEntraineur}
         />
         <Responsable name="Léa Litwinski" num="04********" status="....." />
         <Responsable name="Stani Litwinski" num="04********" status="....." />

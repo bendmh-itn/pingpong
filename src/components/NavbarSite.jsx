@@ -1,23 +1,7 @@
 import React from "react";
 import "../CSS/navbarSite.css";
-import $ from "jquery";
 
-const NavbarSite = (props) => {
-  const toggleComponent = (e) => {
-    let element = e.target.id;
-    if (element === "history") {
-      $(".history").addClass("d-block");
-      $(".history").removeClass("d-none");
-      $(".infrastructure").removeClass("d-block");
-      $(".infrastructure").addClass("d-none");
-    } else {
-      $(".history").addClass("d-none");
-      $(".history").removeClass("d-block");
-      $(".infrastructure").removeClass("d-none");
-      $(".infrastructure").addClass("d-block");
-    }
-  };
-
+const NavbarSite = ({ handleChange }) => {
   return (
     <>
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
@@ -36,15 +20,13 @@ const NavbarSite = (props) => {
         <div className="collapse navbar-collapse" id="navbarColor02">
           <ul className="navbar-nav mr-auto">
             <li
-              onClick={toggleComponent}
-              id="infrastructure"
+              onClick={() => handleChange("infra")}
               className="menu m-0 border-0"
             >
               Infrastructure
             </li>
             <li
-              onClick={toggleComponent}
-              id="history"
+              onClick={() => handleChange("history")}
               className="menu m-0 border-0"
             >
               Historique

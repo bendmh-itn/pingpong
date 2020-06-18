@@ -38,7 +38,7 @@ nav > a:hover {
   border-radius: 0.5em;
 }
 
-li > a:hover {
+.nav-item:hover {
   background-color: darkgray;
   border-radius: 0.5em;
 }
