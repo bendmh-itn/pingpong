@@ -60,10 +60,10 @@ const BecomeMember = (props) => {
         Pour toute information supplémentaire, n'hésitez pas à nous contacter
         par téléphone (<NavLink to="/numeroResponsables">contact</NavLink>) ou
         par mail{" "}
-        <NavLink to="/mail">
-          <span className="d-inline d-sm-inline d-md-none">(formulaire)</span>
-        </NavLink>
-        <span className="d-none d-sm-none d-md-inline">(formulaire)</span>
+        (<NavLink to="/mail">
+          <span className="d-inline d-sm-inline d-md-none">formulaire</span>
+        </NavLink>)
+        <span className="d-none d-sm-none d-md-inline">(formulaire à gauche)</span>
       </p>
     </>
   );

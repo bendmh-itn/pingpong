@@ -17,9 +17,6 @@ const Training = (props) => {
         <p>
           Entrainements dirigés des jeunes : <strong>Mardi 18h30-20h</strong>
         </p>
-        <p>
-          Entrainements libres : <strong>Mardi 20h-</strong>
-        </p>
       </div>
     </>
   );

@@ -1,33 +1,36 @@
 import React from "react";
+import imageTable from "../IMG/table_salle.jpg"
 
-const ClubInfrastructure = (props) => {
+const ClubInfrastructure = () => {
   return (
     <>
       <div className="infrastructure ml-3 d-block">
-        <p>
-          Officia nisi deserunt et incididunt mollit. Ad non mollit sunt
-          incididunt elit consectetur ullamco incididunt aliquip sit occaecat.
-          Nostrud eu eu ea consectetur amet ipsum. Ex aute aute incididunt non.
-          Ut sint pariatur ad tempor esse est labore nulla ex consectetur. Do
-          enim duis adipisicing ad et sunt et. Ex eu esse anim nisi Lorem sit
-          sit ex esse ea in. Aute pariatur ut amet pariatur proident et pariatur
-          mollit nisi consectetur aute. Ea deserunt elit officia aliquip dolor
-          velit consectetur. Laboris dolore sint velit nulla ea velit magna
-          deserunt ea. Occaecat esse ut ex aute ut. Tempor aliqua laborum enim
-          eu eiusmod deserunt velit est occaecat sunt ut anim officia
-          adipisicing. Irure anim Lorem aliquip velit velit. Elit cupidatat
-          nostrud cillum do. Consequat incididunt duis qui mollit aute ad
-          eiusmod nisi minim tempor reprehenderit non. Duis dolore nulla labore
-          cillum. Anim sint nostrud tempor est consectetur nulla magna aute
-          labore incididunt. Eiusmod exercitation laboris aute in duis tempor
-          officia veniam do est deserunt culpa magna fugiat. Occaecat sit labore
-          deserunt deserunt aute occaecat voluptate. Lorem occaecat non qui
-          incididunt ea aute do elit quis consectetur non aliquip ex. Cillum
-          aliqua deserunt cillum et deserunt consectetur anim duis duis.
-          Incididunt enim sunt mollit occaecat sunt. Et elit culpa qui proident
-          aliquip ut mollit. Voluptate nulla do et est Lorem anim veniam sunt ad
-          duis ipsum dolor cillum excepteur.
-        </p>
+        <div className="mb-3 text-center">
+        <div id="carouselExampleControls" class="carousel slide" data-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img className="imageTable" src={imageTable} alt="tables de ping pong" height="200px" />
+            </div>
+            <div class="carousel-item">
+              <img className="imageTable" src="https://siena.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_in_line/2021/01/26/node_734167/2445951/public/2021/01/26/B9725941031Z.1_20210126182127_000%2BG6THFS6QB.2-0.jpg" alt="Image à venir" height="200px" />
+            </div>
+            <div class="carousel-item">
+              <img className="imageTable" alt="Image à venir" height="200px" />
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+          
+        </div>
+        <p>Nous jouons dans l'école primaire de Sauvenière. Le club joue sur 4 tables le samedi. Durant les entrainements, nous sommes en mesure de mettre jusqu'à 6 tables. </p>
+        <p>Les équipes jouent à 14h30 puis ensuite à 19h.</p>
       </div>
     </>
   );

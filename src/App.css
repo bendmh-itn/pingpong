@@ -10,6 +10,20 @@
 .container {
   display: flex;
 }
+.space-between {
+  justify-content: space-between;
+}
+
+.containerFlexible {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.elementFlexible {
+  margin: 30px;
+  text-align: center;
+}
 
 footer {
   background-color: #555;
@@ -43,8 +57,26 @@ nav > a:hover {
   border-radius: 0.5em;
 }
 
+.buttonConnexion {
+  background-color: Transparent;
+  border: none;
+}
+
+.buttonConnexion:hover {
+  background-color: darkgray;
+  border-radius: 0.5em;
+}
+
 @media screen and (max-width: 575px) {
   .marginResponsive {
     margin: auto;
   }
+  .imageTable {
+    width: 100%;
+  }
+}
+
+.d-xl-block {
+  position: absolute;
+  bottom: 0;
 }

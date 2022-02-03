@@ -13,12 +13,12 @@ import image from "./IMG/ping.png";
 import MenuClub from "./pages/MenuClub";
 import BecomeMember from "./pages/BecomeMember";
 import Mail from "./pages/mail";
+import EquipeSemaine from "./pages/EquipeSemaine";
 
 function App() {
   return (
     <HashRouter>
       <NavBar />
-
       <main>
         <Jumbotron
           text="Petit club mais avec des grands joueurs"
@@ -42,6 +42,7 @@ function App() {
                 path="/numeroResponsables"
                 component={NumeroResponsables}
               />
+              <Route path="/equipes" component={EquipeSemaine} />
               <Route path="/mapClub" component={MapClub} />
               <Route path="/mail" component={Mail} />
               <Route path="/member" component={Member} />
@@ -53,7 +54,7 @@ function App() {
           </div>
         </div>
       </main>
-      <footer className="d-none d-sm-none d-md-block">
+      <footer className="d-none d-sm-none d-md-block d-xl-none">
         <div className="page-footer">
           <Link to="/mapClub">
             Adresse du club : Place du sablon 5030 Sauvenière

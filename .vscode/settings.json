@@ -1,0 +1,7 @@
+{
+    "php.suggest.basic": false,
+    "editor.formatOnSave": true,
+    "emmet.includeLanguages": {
+        "twig": "html"
+    }
+}

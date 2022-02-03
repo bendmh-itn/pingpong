@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import {signInWithGoogle} from "../firebase";
 
 const Navbar = (props) => {
   return (
@@ -80,7 +81,16 @@ const Navbar = (props) => {
                 </NavLink>
               </div>
             </li>
+            <li className="nav-item active">
+              <NavLink className="nav-link" to="/equipes">
+                Équipes
+              </NavLink>
+            </li>
           </ul>
+          <button
+              className="buttonConnexion navbar-brand text-right" onClick={signInWithGoogle}>
+              Connexion
+          </button>
         </div>
       </nav>
     </>
