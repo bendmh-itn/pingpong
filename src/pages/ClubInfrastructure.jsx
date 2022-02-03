@@ -6,25 +6,25 @@ const ClubInfrastructure = () => {
     <>
       <div className="infrastructure ml-3 d-block">
         <div className="mb-3 text-center">
-        <div id="carouselExampleControls" class="carousel slide" data-interval="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
+        <div id="carouselExampleControls" className="carousel slide" data-interval="false">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
               <img className="imageTable" src={imageTable} alt="tables de ping pong" height="200px" />
             </div>
-            <div class="carousel-item">
-              <img className="imageTable" src="https://siena.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_in_line/2021/01/26/node_734167/2445951/public/2021/01/26/B9725941031Z.1_20210126182127_000%2BG6THFS6QB.2-0.jpg" alt="Image à venir" height="200px" />
+            <div className="carousel-item">
+              <img className="imageTable" src="https://siena.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_in_line/2021/01/26/node_734167/2445951/public/2021/01/26/B9725941031Z.1_20210126182127_000%2BG6THFS6QB.2-0.jpg" alt="Ecole de sauvenière" height="200px" />
             </div>
-            <div class="carousel-item">
-              <img className="imageTable" alt="Image à venir" height="200px" />
+            <div className="carousel-item">
+              <img className="imageTable" alt="à venir" height="200px" />
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+          <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span className="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            <span className="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+          <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span className="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            <span className="sr-only">Next</span>
           </a>
         </div>
           

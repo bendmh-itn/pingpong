@@ -20,8 +20,8 @@ export const user = auth.currentUser;
 const provider = new GoogleAuthProvider();
 
 export const signInWithGoogle = () => {
-  signInWithPopup(auth, provider);
-  /*.then((result) => {
+  signInWithPopup(auth, provider)
+  .then((result) => {
       const name = result.user.displayName;
       const email = result.user.email;
       localStorage.setItem("email", email);
@@ -29,7 +29,7 @@ export const signInWithGoogle = () => {
     })
     .catch((error) => {
       console.log(error);
-    });*/
+    });
 };
 
 const createUser = async (username, email) => {
