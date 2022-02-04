@@ -47,7 +47,7 @@ const Modal = ({id, listeJoueurs,choosePersonTeams, listeClub, chooseAdversaire,
                 </div>
                 <div className="modal-footer">
                     <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" className="btn btn-success" onClick={() => validateTeam(id)}>Valider</button>
+                    <button type="button" className="btn btn-success" data-dismiss="modal" onClick={() => validateTeam(id)}>Valider</button>
                 </div>
                 </div>
             </div>
