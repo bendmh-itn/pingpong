@@ -69,14 +69,24 @@ nav > a:hover {
 
 @media screen and (max-width: 575px) {
   .marginResponsive {
-    margin: auto;
+    margin: 0;
   }
   .imageTable {
     width: 100%;
+  }
+  .visibleOrNot {
+    display: none;
   }
 }
 
 .d-xl-block {
   position: absolute;
   bottom: 0;
+}
+
+.table {
+  display: inline-block;
+  height: 500px;
+  overflow-y: scroll;
+  width: 100%;
 }

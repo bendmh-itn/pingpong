@@ -14,10 +14,11 @@ const EquipeSemaine = () => {
     const [listeJoueurs, setListeJoueurs] = useState([]);
     const [team, setTeam] = useState({equipe: "", clubAdverse: "", deplacement: "", heure: "", joueur1: "", joueur2: "", joueur3: "", joueur4: ""});
     const [listeClub, setListeClub] = useState([]);
-    const [message, setMessage] = useState("Bravo");
+    const [message, setMessage] = useState("");
     const [classSuccessError, setClassSuccessError] = useState("success");
     const [visibleOrNot, setVisibleOrNot] = useState("invisible");
     const [teamChanged, setTeamChanged] = useState(false);
+    const [idTeam, setIdTeam] = useState("");
 
     const deplacement = [
         { value: 'contre', label: 'à domicile' },
@@ -109,10 +110,11 @@ const EquipeSemaine = () => {
         }
     }
 
-    const validateTeam = async (id) => {
-        const teamsDoc = doc(db, "equipes", id);
+    const validateTeam = async () => {
+        const teamsDoc = doc(db, "equipes", idTeam);
         const newField = {semaine: "" + semaineSelected, equipe: team.equipe, clubAdverse: team.clubAdverse, deplacement: team.deplacement, heure: team.heure, joueur1: team.joueur1, joueur2: team.joueur2, joueur3: team.joueur3, joueur4: team.joueur4}
         //await addDoc(equipeCollection, {semaine: "" + semaineSelected, equipe: team.equipe, clubAdverse: team.clubAdverse, deplacement: team.deplacement, heure: team.heure, joueur1: team.joueur1, joueur2: team.joueur2, joueur3: team.joueur3, joueur4: team.joueur4})
+
         await updateDoc(teamsDoc, newField)
         .then(() => {
             setMessage("L'équipes a bien été modifiée");
@@ -144,6 +146,7 @@ const EquipeSemaine = () => {
         listesEquipes.filter((element) => {return element.id === id }).forEach(element => {
             setTeam({equipe: element.equipe, clubAdverse: element.clubAdverse, deplacement: element.deplacement, heure: element.heure, joueur1: element.joueur1, joueur2: element.joueur2, joueur3: element.joueur3, joueur4: element.joueur4})
         })
+        setIdTeam(id);
     }
 
     const deleteTeam = async (id) => {
@@ -187,7 +190,7 @@ const EquipeSemaine = () => {
         setEquipeCollection(listesEquipesCollectionRef);
         setTeamChanged(false);
         const listesEquipesCollectionRefOrderByTeams = query(listesEquipesCollectionRef, orderBy("equipe"));
-        const listeJoueursCollectionRefWhereActif = query(listeJoueursCollectionRef, where("etat", "==", "actif"));
+        const listeJoueursCollectionRefWhereActif = query(listeJoueursCollectionRef, where("etat", "==", "actif"), orderBy("classement"));
         const listeUsersCollectionRefConnected = query(listeUsersCollectionRef, where("email", "==", localStorage.getItem("email")));
 
         const getListJoueur = async () => {

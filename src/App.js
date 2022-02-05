@@ -26,7 +26,7 @@ function App() {
           imgAlt="Raquette ping pong"
         />
         <div className="container">
-          <div className="row">
+          <div className="row mr-3">
             <div className="col-sm d-none d-sm-none d-md-block">
               <FormContact
                 width="250"
