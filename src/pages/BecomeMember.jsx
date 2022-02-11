@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import imageHome from "../IMG/ping.png";
 import JumbotronChange from "../services/jumbotronChange";
 import { NavLink } from "react-router-dom";
+import NavbarSiteMobileMember from "../components/NavbarSiteMember";
 
 const BecomeMember = (props) => {
   useEffect(() => {
@@ -10,6 +11,9 @@ const BecomeMember = (props) => {
   }, []);
   return (
     <>
+      <div className="d-block d-sm-block d-md-none">
+        <NavbarSiteMobileMember />
+      </div>
       <h2>Informations générales</h2>
       <p>
         Nous autorisons tous jeunes à venir tester les entrainements dirigés

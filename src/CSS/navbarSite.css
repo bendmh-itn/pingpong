@@ -20,3 +20,11 @@
 a:hover {
   text-decoration: none;
 }
+
+.navbar {
+  justify-content: space-around;
+}
+
+.imageLogo {
+  color: white;
+}

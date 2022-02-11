@@ -5,6 +5,7 @@ import "../CSS/timeline.css";
 import NavbarSite from "../components/NavbarSite";
 import HistoryClub from "./HistoryClub";
 import ClubInfrastructure from "./ClubInfrastructure";
+import NavbarSiteMobile from "../components/NavbarSiteMobile";
 
 const MenuClub = (props) => {
   const [affichage, setaffichage] = useState(true);
@@ -31,7 +32,12 @@ const MenuClub = (props) => {
 
   return (
     <>
-      <NavbarSite handleChange={handleChange} />
+      <div className="d-none d-sm-none d-md-block">
+        <NavbarSite handleChange={handleChange} />
+      </div>
+      <div className="d-block d-sm-block d-md-none">
+        <NavbarSiteMobile handleChange={handleChange} />
+      </div>
       <ElementChanging />
     </>
   );

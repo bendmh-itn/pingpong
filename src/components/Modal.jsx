@@ -3,20 +3,17 @@ import SelectPlayer from './SelectPlayers'
 import Select from 'react-select'
 
 
-const Modal = ({id, listeJoueurs,choosePersonTeams, listeClub, chooseAdversaire, deplacement, chooseDeplacement, team, chooseClock, validateTeam, getTeam}) => {
+const Modal = ({id, listeJoueurs,choosePersonTeams, chooseAdversaire, deplacement, chooseDeplacement, team, chooseClock, validateTeam, getTeam}) => {
     const optionsJoueurs = [];
     const optionsClub = [];
     listeJoueurs.forEach(element => {
-        optionsJoueurs.push({ value: element.prenom + " " + element.nom + " " + element.classement, label: element.prenom + " " + element.nom + " " + element.classement })
+        optionsJoueurs.push({ value: element.LastName + " " + element.FirstName[0] + " " + element.Ranking, label: element.LastName + " " + element.FirstName + " " + element.Ranking })
     })
-    listeClub.forEach(element => {
-        optionsClub.push({ value: element.nomClub, label: element.nomClub })
-    });
 
     return ( 
         <>
             <button onClick={() => getTeam(id)} type="button" className="btn btn-primary mr-3" data-toggle="modal" data-target="#exampleModal">
-                Changer l'équipe
+                Changer
             </button>
             <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog" role="document">

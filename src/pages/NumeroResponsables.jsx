@@ -3,14 +3,18 @@ import JumbotronChange from "../services/jumbotronChange";
 import Responsable from "../components/Responsable";
 import imageTel from "../IMG/tel.PNG";
 import imageEntraineur from "../IMG/entraineur.jpg";
+import NavbarSiteMobileContact from "../components/NavbarSiteMobileContact";
 
 const NumeroResponsables = (props) => {
   useEffect(() => {
-    JumbotronChange.changeText("Liste des responsables du club");
+    JumbotronChange.changeText("Responsables du club");
     JumbotronChange.changeImage(imageTel);
   }, []);
   return (
     <>
+      <div className="d-block d-sm-block d-md-none">
+        <NavbarSiteMobileContact />
+      </div>
       <div
         style={{ width: "100%" }}
         className="row justify-content-center pl-5"

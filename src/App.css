@@ -1,6 +1,7 @@
 .jumbotron {
   background-color: lightgray;
   padding: 32px;
+  text-align: center;
 }
 
 .h1Jumbotron {
@@ -21,7 +22,7 @@
 }
 
 .elementFlexible {
-  margin: 30px;
+  margin: 20px;
   text-align: center;
 }
 
@@ -69,13 +70,17 @@ nav > a:hover {
 
 @media screen and (max-width: 575px) {
   .marginResponsive {
-    margin: 0;
+    margin: 0 auto;
+    text-align: center;
   }
   .imageTable {
     width: 100%;
   }
   .visibleOrNot {
     display: none;
+  }
+  .container {
+    padding: 0;
   }
 }
 
@@ -88,5 +93,4 @@ nav > a:hover {
   display: inline-block;
   height: 500px;
   overflow-y: scroll;
-  width: 100%;
 }

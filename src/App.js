@@ -14,11 +14,17 @@ import MenuClub from "./pages/MenuClub";
 import BecomeMember from "./pages/BecomeMember";
 import Mail from "./pages/mail";
 import EquipeSemaine from "./pages/EquipeSemaine";
+import NavbarMobile from "./components/NavbarMobile";
 
 function App() {
   return (
     <HashRouter>
-      <NavBar />
+      <div className="d-none d-sm-none d-md-block">
+        <NavBar />
+      </div>
+      <div className="d-block d-sm-block d-md-none">
+        <NavbarMobile />
+      </div>
       <main>
         <Jumbotron
           text="Petit club mais avec des grands joueurs"

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import jumbotronChange from "../services/jumbotronChange";
 import imageMap from "../IMG/map.png";
 import "../CSS/map.css";
+import NavbarSiteMobileContact from "../components/NavbarSiteMobileContact";
 
 const MapClub = (props) => {
   useEffect(() => {
@@ -11,6 +12,9 @@ const MapClub = (props) => {
 
   return (
     <>
+      <div className="d-block d-sm-block d-md-none">
+        <NavbarSiteMobileContact />
+      </div>
       <div className="mapouter">
         <div className="gmap_canvas">
           <iframe
