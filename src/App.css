@@ -18,11 +18,11 @@
 .containerFlexible {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .elementFlexible {
-  margin: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -48,24 +48,40 @@ footer > div > a:hover {
   text-decoration: none;
 }
 
-nav > a:hover {
-  background-color: darkgray;
-  border-radius: 0.5em;
-}
-
-.nav-item:hover {
-  background-color: darkgray;
-  border-radius: 0.5em;
-}
-
 .buttonConnexion {
   background-color: Transparent;
   border: none;
 }
 
-.buttonConnexion:hover {
-  background-color: darkgray;
-  border-radius: 0.5em;
+@media screen and (min-width: 760px) and (max-width: 1000px) {
+  .containerFlexible {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  nav > a:hover {
+    background-color: darkgray;
+    border-radius: 0.5em;
+  }
+  .imageTable {
+    width: 90%;
+    max-height: 400px;
+  }
+  .nav-item:hover {
+    background-color: darkgray;
+    border-radius: 0.5em;
+  }
+  .buttonConnexion:hover {
+    background-color: darkgray;
+    border-radius: 0.5em;
+  }
+}
+
+.table {
+  display: inline-block;
+  height: 480px;
+  overflow-y: scroll;
 }
 
 @media screen and (max-width: 575px) {
@@ -74,6 +90,7 @@ nav > a:hover {
     text-align: center;
   }
   .imageTable {
+    height: 200px;
     width: 100%;
   }
   .visibleOrNot {
@@ -82,15 +99,17 @@ nav > a:hover {
   .container {
     padding: 0;
   }
+  .myTable {
+    display: inline-block;
+    height: 370px;
+    overflow-y: scroll;
+  }
+  .containerFlexible {
+    justify-content: center;
+  }
 }
 
 .d-xl-block {
   position: absolute;
   bottom: 0;
-}
-
-.table {
-  display: inline-block;
-  height: 500px;
-  overflow-y: scroll;
 }

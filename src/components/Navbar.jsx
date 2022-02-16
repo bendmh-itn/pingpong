@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import {signInWithGoogle} from "../firebase";
+import {signInWithGoogle, Disconnect} from "../firebase";
 
 const Navbar = (props) => {
   return (
@@ -87,10 +87,18 @@ const Navbar = (props) => {
               </NavLink>
             </li>
           </ul>
+          {(localStorage.getItem("email") === null || localStorage.getItem("email") === "") &&
           <button
               className="buttonConnexion navbar-brand text-right" onClick={signInWithGoogle}>
               Connexion
           </button>
+        }
+        {localStorage.getItem("email") !== null && localStorage.getItem("email") !== "" &&
+          <button
+              className="buttonConnexion navbar-brand text-right" onClick={Disconnect}>
+              Déconnexion
+          </button>
+        }
         </div>
       </nav>
     </>

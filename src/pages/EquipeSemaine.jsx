@@ -243,8 +243,7 @@ const EquipeSemaine = () => {
                 return (
                     <div className="elementFlexible" key={equipe.TeamId}>
                         <h2>Équipe {equipe.Team}</h2>
-                        {listeTeamsFirebase.map((team) => {
-                            if(team.equipe === equipe.Team)
+                        {listeTeamsFirebase.filter((team) => team.equipe === equipe.Team).map((team) => {
                             return (
                                 <div key={team.equipe}>
                                     <p>{team.joueur1}</p>

@@ -13,7 +13,9 @@ const NumeroResponsables = (props) => {
   return (
     <>
       <div className="d-block d-sm-block d-md-none">
-        <NavbarSiteMobileContact />
+        <NavbarSiteMobileContact
+          onglet="numeroResponsables"
+        />
       </div>
       <div
         style={{ width: "100%" }}

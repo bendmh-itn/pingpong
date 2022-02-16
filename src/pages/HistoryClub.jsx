@@ -19,7 +19,7 @@ const HistoryClub = (props) => {
   };
   return (
     <>
-      <div className="main-timeline4 ml-3 history">
+      <div className="text-left main-timeline4 ml-3 history">
         <TimeLineElement
           toogleShow={toogleShow}
           text="C'est lors des championnats provinciaux que Bastien se hisse en final dans la catégorie des NC. 

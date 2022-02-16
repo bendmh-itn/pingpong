@@ -13,7 +13,9 @@ const Mail = () => {
   return (
     <>
       <div className="d-block d-sm-block d-md-none">
-        <NavbarSiteMobileContact />
+        <NavbarSiteMobileContact
+          onglet="mail"
+        />
       </div>
       <FormContact
         width="250"

@@ -1,4 +1,9 @@
-import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import {
+  getAuth,
+  GoogleAuthProvider,
+  signInWithPopup,
+  signOut,
+} from "firebase/auth";
 import "firebase/firestore";
 import "firebase/storage";
 import { initializeApp } from "firebase/app";
@@ -21,11 +26,24 @@ const provider = new GoogleAuthProvider();
 
 export const signInWithGoogle = () => {
   signInWithPopup(auth, provider)
-  .then((result) => {
+    .then((result) => {
       const name = result.user.displayName;
       const email = result.user.email;
       localStorage.setItem("email", email);
       createUser(name, email);
+      window.location.reload();
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+};
+
+export const Disconnect = () => {
+  const auth = getAuth();
+  signOut(auth)
+    .then(() => {
+      localStorage.setItem("email", "");
+      window.location.reload();
     })
     .catch((error) => {
       console.log(error);

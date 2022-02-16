@@ -13,7 +13,9 @@ const MapClub = (props) => {
   return (
     <>
       <div className="d-block d-sm-block d-md-none">
-        <NavbarSiteMobileContact />
+        <NavbarSiteMobileContact
+          onglet="mapClub"
+        />
       </div>
       <div className="mapouter">
         <div className="gmap_canvas">

@@ -25,9 +25,11 @@ const Member = () => {
   return (
     <>
       <div className="d-block d-sm-block d-md-none">
-        <NavbarSiteMobileMember />
+        <NavbarSiteMobileMember
+          onglet="member"
+        />
       </div>
-      <table className="table table-striped">
+      <table className="table table-striped myTable">
         <thead className="visibleOrNot">
           <tr>
             <th scope="col" className="text-center">Indice</th>
