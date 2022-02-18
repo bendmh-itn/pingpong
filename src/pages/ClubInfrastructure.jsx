@@ -7,6 +7,10 @@ const ClubInfrastructure = () => {
   return (
     <>
       <div className="infrastructure ml-3 d-block">
+        <div className="text-left">
+          <p>Nous jouons dans l'école primaire de Sauvenière. Le club joue sur 4 tables le samedi. Durant les entrainements, nous sommes en mesure de mettre jusqu'à 6 tables. </p>
+          <p>Les équipes jouent à 14h30 puis ensuite à 19h.</p>
+        </div>
         <div className="mb-3 text-center">
         <div id="carouselExampleControls" className="carousel slide" data-interval="false">
           <div className="carousel-inner">
@@ -33,10 +37,6 @@ const ClubInfrastructure = () => {
           </a>
         </div>
           
-        </div>
-        <div className="text-left">
-          <p>Nous jouons dans l'école primaire de Sauvenière. Le club joue sur 4 tables le samedi. Durant les entrainements, nous sommes en mesure de mettre jusqu'à 6 tables. </p>
-          <p>Les équipes jouent à 14h30 puis ensuite à 19h.</p>
         </div>
       </div>
     </>
