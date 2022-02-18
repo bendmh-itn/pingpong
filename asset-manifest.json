@@ -1,30 +1,33 @@
 {
   "files": {
-    "main.css": "/pingpong/static/css/main.a95105d1.chunk.css",
-    "main.js": "/pingpong/static/js/main.c3c1cdcd.chunk.js",
-    "main.js.map": "/pingpong/static/js/main.c3c1cdcd.chunk.js.map",
+    "main.css": "/pingpong/static/css/main.916f2091.chunk.css",
+    "main.js": "/pingpong/static/js/main.0c84b3c3.chunk.js",
+    "main.js.map": "/pingpong/static/js/main.0c84b3c3.chunk.js.map",
     "runtime-main.js": "/pingpong/static/js/runtime-main.00742b54.js",
     "runtime-main.js.map": "/pingpong/static/js/runtime-main.00742b54.js.map",
-    "static/js/2.84b0082b.chunk.js": "/pingpong/static/js/2.84b0082b.chunk.js",
-    "static/js/2.84b0082b.chunk.js.map": "/pingpong/static/js/2.84b0082b.chunk.js.map",
+    "static/js/2.fe91086c.chunk.js": "/pingpong/static/js/2.fe91086c.chunk.js",
+    "static/js/2.fe91086c.chunk.js.map": "/pingpong/static/js/2.fe91086c.chunk.js.map",
     "index.html": "/pingpong/index.html",
-    "precache-manifest.daa7fae8034de8dcede42310753759f8.js": "/pingpong/precache-manifest.daa7fae8034de8dcede42310753759f8.js",
+    "precache-manifest.7f1182833b7b6f22504139f15715bc95.js": "/pingpong/precache-manifest.7f1182833b7b6f22504139f15715bc95.js",
     "service-worker.js": "/pingpong/service-worker.js",
-    "static/css/main.a95105d1.chunk.css.map": "/pingpong/static/css/main.a95105d1.chunk.css.map",
-    "static/js/2.84b0082b.chunk.js.LICENSE.txt": "/pingpong/static/js/2.84b0082b.chunk.js.LICENSE.txt",
+    "static/css/main.916f2091.chunk.css.map": "/pingpong/static/css/main.916f2091.chunk.css.map",
+    "static/js/2.fe91086c.chunk.js.LICENSE.txt": "/pingpong/static/js/2.fe91086c.chunk.js.LICENSE.txt",
     "static/media/defaultProfil.png": "/pingpong/static/media/defaultProfil.5a021ab9.png",
     "static/media/entraineur.jpg": "/pingpong/static/media/entraineur.abfc885d.jpg",
     "static/media/liste.png": "/pingpong/static/media/liste.726cbd29.png",
+    "static/media/machine.jpg": "/pingpong/static/media/machine.8f4e974d.jpg",
     "static/media/map.png": "/pingpong/static/media/map.33455653.png",
+    "static/media/personnes.jpg": "/pingpong/static/media/personnes.e3a56d81.jpg",
     "static/media/ping.png": "/pingpong/static/media/ping.c83809c6.png",
     "static/media/retro.png": "/pingpong/static/media/retro.fa31ab20.png",
+    "static/media/salle.jpg": "/pingpong/static/media/salle.7dd07b46.jpg",
     "static/media/table_salle.jpg": "/pingpong/static/media/table_salle.c1331311.jpg",
     "static/media/tel.PNG": "/pingpong/static/media/tel.d71d0db1.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.00742b54.js",
-    "static/js/2.84b0082b.chunk.js",
-    "static/css/main.a95105d1.chunk.css",
-    "static/js/main.c3c1cdcd.chunk.js"
+    "static/js/2.fe91086c.chunk.js",
+    "static/css/main.916f2091.chunk.css",
+    "static/js/main.0c84b3c3.chunk.js"
   ]
 }
